@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Appa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Alegreya', serif;
+      background-color: #f7f5f2;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px 20px 10px;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+
+    p {
+      max-width: 700px;
+      font-size: 20px;
+      line-height: 1.6;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .gallery-container {
+      width: 100%;
+      max-width: 1000px;
+      overflow: hidden;
+      margin: 40px auto;
+      position: relative;
+    }
+
+    .slides {
+      display: flex;
+      width: fit-content;
+      animation: scroll-left 60s linear infinite;
+    }
+
+    .slides img {
+      width: auto;
+      max-width: none;
+      height: auto;
+      max-height: 500px;
+      border-radius: 12px;
+      margin: 0 10px;
+      flex-shrink: 0;
+    }
+
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 36px;
+      }
+      p {
+        font-size: 18px;
+      }
+      .slides img {
+        max-height: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Happy Father's Day Appa!!</h1>
+    <p>
+      Even though you're super strict sometimes, I know it's because you care, and you're also really fun! 
+      I see how hard you work and how passionate you are about everything, and it's seriously inspiring. 
+      Thanks for everything, Appa. You're the best! Love you!
+    </p>
+  </header>
+
+  <div class="gallery-container">
+    <div class="slides" id="slides">
+      <!-- Duplicate images for smooth loop -->
+      <img src="photos/photo1.jpg" alt="Memory 1">
+      <img src="photos/photo2.jpg" alt="Memory 2">
+      <img src="photos/photo3.jpg" alt="Memory 3">
+      <img src="photos/photo4.jpg" alt="Memory 4">
+      <img src="photos/photo5.jpg" alt="Memory 5">
+      <img src="photos/photo6.jpg" alt="Memory 6">
+      <img src="photos/photo7.jpg" alt="Memory 7">
+      <img src="photos/photo8.jpg" alt="Memory 8">
+      <img src="photos/photo9.jpg" alt="Memory 9">
+      <img src="photos/photo10.jpg" alt="Memory 10">
+      
+      <!-- Duplicate again to allow seamless looping -->
+      <img src="photos/photo1.jpg" alt="Memory 1 clone">
+      <img src="photos/photo2.jpg" alt="Memory 2 clone">
+      <img src="photos/photo3.jpg" alt="Memory 3 clone">
+      <img src="photos/photo4.jpg" alt="Memory 4 clone">
+      <img src="photos/photo5.jpg" alt="Memory 5 clone">
+      <img src="photos/photo6.jpg" alt="Memory 6 clone">
+      <img src="photos/photo7.jpg" alt="Memory 7 clone">
+      <img src="photos/photo8.jpg" alt="Memory 8 clone">
+      <img src="photos/photo9.jpg" alt="Memory 9 clone">
+      <img src="photos/photo10.jpg" alt="Memory 10 clone">
+    </div>
+  </div>
+</body>
+</html>
